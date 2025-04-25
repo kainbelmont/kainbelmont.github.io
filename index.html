@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biorremediación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background: #2c3e50;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            text-align: center;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.container').forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="#" onclick="showSection('inicio')">Inicio</a>
+        <a href="#" onclick="showSection('acerca')">Acerca de</a>
+        <a href="#" onclick="showSection('equipo')">Equipo</a>
+        <a href="#" onclick="showSection('contacto')">Contacto</a>
+    </nav>
+    
+    <div class="container" id="inicio">
+        <h1>Biorremediación: Una Solución Sostenible para la Contaminación</h1>
+        <p>La biorremediación es un proceso biotecnológico que utiliza microorganismos, hongos, plantas o enzimas para descontaminar ambientes afectados por sustancias nocivas.</p>
+    </div>
+    
+    <div class="container hidden" id="acerca">
+        <h2>Acerca de Nosotros</h2>
+        <p>Somos una empresa dedicada a la investigación y aplicación de la biorremediación para la restauración ambiental. Nuestro equipo está compuesto por expertos en biotecnología, ecología y ciencias ambientales, comprometidos con ofrecer soluciones innovadoras y sostenibles.</p>
+        <p>Nuestra misión es contribuir a la conservación del medio ambiente a través del desarrollo de tecnologías limpias y efectivas para la eliminación de contaminantes.</p>
+    </div>
+    
+    <div class="container hidden" id="equipo">
+        <h2>Nuestro Equipo</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="F:\descargas\WhatsApp Image 2025-03-26 at 9.19.21 AM.jpeg" alt="Miembro 1">
+                <p>Alan Javel Santiago Hernández</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\lenovo\Pictures\angel.jpg" alt="Miembro 2">
+                <p>Ángel Escobar Solís</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\lenovo\Pictures\emilio xd.jpg" alt="Miembro 3">
+                <p>Esquivel Zamora Emiliano</p>
+            </div>
+            <div class="team-member">
+                <img src="C:\Users\lenovo\Pictures\BERT.webp" alt="Miembro 4">
+                <p>Espinoza Zarate David Ulises</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container hidden" id="contacto">
+        <h2>Contacto</h2>
+        <p>Teléfono: +52 555-123-4567</p>
+        <p>Email: contacto@biorremediacion.com</p>
+        <p>Dirección: Calle Falsa 123, Ciudad Verde, México</p>
+    </div>
+</body>
+</html>
